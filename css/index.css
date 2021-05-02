@@ -1,0 +1,103 @@
+::selection
+{
+    background-color: black;
+    color: cornsilk;
+}
+
+/*heeder*/
+body
+{
+    overflow: hidden;
+    background-color: black;
+}
+header .container1
+{
+    background-color: rgb(37, 37, 37);
+    height: 100px;
+    
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    opacity: .9;
+}
+header .container1 .right-cont
+{
+    display: flex;
+    align-items: center;
+}
+header .container1 .right-cont nav ul
+{
+    display: flex;
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 10px;
+
+}
+header .container1 .right-cont nav ul li
+{
+    color:#D4AF37 ;
+    font-weight: 500;
+    margin-right: 50px;
+    font-size: 17px;
+
+}
+header .container1 img
+{
+    width: 100px;
+
+}
+header .container1 button
+{
+    background-color:#D4AF37;
+    font-weight: bold;
+    border: none;
+    color: rgb(37, 37, 37);
+    border-radius: 4px;
+    width: 119px;
+    height: 41px;
+}
+button:focus
+{
+    outline: none;
+    
+}
+header .back-cont
+{
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    background-image: url("../images/samantha-baqvel-highresscreenshot00007.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+     /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    
+} 
+header .back-cont h1
+{
+    margin: 6% 0% 8px 6%;
+    color: #b49630;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;   
+
+}
+header .back-cont p
+{
+    color: #b49630;
+    margin-top: 17px;
+    font-size: 21px;
+    opacity: .7;
+    margin: 3% 0 0 6%;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+
+/*header*/
