@@ -3,7 +3,10 @@
     background-color: black;
     color: cornsilk;
 }
-
+html
+{
+    overflow: hidden;
+}
 /*heeder*/
 body
 {
@@ -12,9 +15,8 @@ body
 }
 header .container1
 {
-    background-color: rgb(37, 37, 37);
-    height: 100px;
     
+    height: 100px;
     padding: 0;
     margin: 0px;
     display: flex;
@@ -22,12 +24,13 @@ header .container1
     align-items: center;
     z-index: 2;
     position: relative;
-    opacity: .9;
+    
 }
 header .container1 .right-cont
 {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 header .container1 .right-cont nav ul
 {
@@ -43,14 +46,18 @@ header .container1 .right-cont nav ul li
     font-weight: 500;
     margin-right: 50px;
     font-size: 17px;
+    cursor: pointer;
 
+}
+header .container1 .right-cont nav ul li:hover
+{
+    color: rgb(37, 37, 37);
 }
 header .container1 img
 {
     width: 100px;
-
 }
-header .container1 button
+ button
 {
     background-color:#D4AF37;
     font-weight: bold;
@@ -59,45 +66,152 @@ header .container1 button
     border-radius: 4px;
     width: 119px;
     height: 41px;
+    cursor: pointer;
+    z-index: 2;
+}
+header .container1 button:hover
+{
+    background-color: black;
+    color: #D4AF37;
 }
 button:focus
 {
     outline: none;
-    
 }
-header .back-cont
+header .background
 {
     position: relative;
     top: -100px;
-    z-index: 1;
-    background-image: url("../images/samantha-baqvel-highresscreenshot00007.jpg");
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+header .background::before
+{
+    background-image: url("../images/triangle-solid-black-gold-4k-abstract.jpg");
+    content: "";
     background-repeat: no-repeat;
     background-size:cover;
-    display: flex;
-     /* align-items: center; */
-    justify-content: center;
-    flex-direction: column;
-    
-} 
-header .back-cont h1
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+header .background h1
 {
-    margin: 6% 0% 8px 6%;
-    color: #b49630;
+    color:#D4AF37;
     font-size: 50px;
     font-weight: bold;
-    letter-spacing: 10px;   
-
+    letter-spacing: 16px;  
+    z-index: 1; 
 }
-header .back-cont p
+header .background p
 {
-    color: #b49630;
+    color: #D4AF37;
     margin-top: 17px;
     font-size: 21px;
     opacity: .7;
-    margin: 3% 0 0 6%;
     font-weight: 500;
     letter-spacing: 7px;
+    z-index: 1;
 }
+.background button
+{
+    display: none;
+}
+.icon-hamburger
+{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+}
+.icon-hamburger span
+{
+    width: 50px;
+    height: 2px;
+    background-color: #D4AF37; 
+    margin-top: 10px;
+    
+}
+.icon-close
+{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.icon-close span
+{
+    width: 50px;
+    height: 5px;
+    background-color: #D4AF37;
+    margin: -2px; 
+}
+.icon-close span:first-of-type
+{
+    transform: rotateZ(45deg);
+}
+.icon-close span:last-of-type
+{
+    transform: rotateZ(-45deg);
 
+}
+@media only screen and (max-width:500px)
+{
+    header .container1 .right-cont nav
+    {
+        display: none;
+        height: 354px;
+    }
+    header .background h1
+    {
+        margin-bottom: 41px;
+        font-size:2em;
+        letter-spacing: 3px;
+    }
+    header .background p
+    {
+        letter-spacing: 3px;
+        font-size: 24px;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    header .container1 button
+    {
+        display: none;
+    }
+    .background button
+    {
+        display: block;
+        z-index: 1;
+    }
+    header .container1 img
+    {
+        width: 80px;
+        margin: 0;;
+    }
+    .icon-hamburger
+    {
+        display: inherit;
+    }
+    header .container1 .right-cont nav ul
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    header .container1 .right-cont nav ul li
+    {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
 /*header*/
