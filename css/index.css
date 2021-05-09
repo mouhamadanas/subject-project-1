@@ -262,8 +262,7 @@ header .background p
 hr
 {
     height: 1px;
-    width: 800px;
-    color:;
+    width: 40%;
     margin: -3px auto;
 }
 /*cont-se-a*/
@@ -273,6 +272,7 @@ hr
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 .cont-se-a div
 {
