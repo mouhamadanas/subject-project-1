@@ -3,15 +3,13 @@
     background-color: black;
     color: cornsilk;
 }
-html
-{
-    overflow: hidden;
-}
+
 /*heeder*/
-body
+header
 {
-    overflow: hidden;
     background-color: black;
+    height: 100vh;
+    border-radius: 0 0 0 173px;
 }
 header .container1
 {
@@ -24,6 +22,7 @@ header .container1
     align-items: center;
     z-index: 2;
     position: relative;
+    
     
 }
 header .container1 .right-cont
@@ -51,7 +50,11 @@ header .container1 .right-cont nav ul li
 }
 header .container1 .right-cont nav ul li:hover
 {
-    color: rgb(37, 37, 37);
+    text-decoration: underline  ;
+}
+header .container1 .right-cont nav ul li:active
+{
+    color:grey;
 }
 header .container1 img
 {
@@ -101,6 +104,7 @@ header .background::before
     bottom: 0px;
     left: 0px;
     z-index: 1;
+    border-radius: 0 0 0 173px;
 }
 header .background h1
 {
@@ -215,3 +219,81 @@ header .background p
     }
 }
 /*header*/
+/*cont-fi-a*/
+.cont-fi-a
+{
+    margin-top: 250px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.cont-fi-a h1
+{
+    font-weight: 100;
+    font-family: "ui-monospace";
+    margin: auto 15% 4% 15%;
+    text-align: center;
+    line-height: 74px;
+    letter-spacing: 3px;
+    color: #9c822b
+
+}
+.cont-fi-a img
+{
+    width: 50%;
+    margin-bottom: 100px;
+}
+@media only screen and (max-width:500px)
+{
+    .cont-fi-a h1
+    {
+        font-size: 161%;
+        line-height: 41px;
+        letter-spacing: 4px;
+    }
+    .cont-fi-a img
+    {
+
+        margin-top:50px;
+        width: 80%;
+    }
+}
+/*cont-fi-a*/
+hr
+{
+    height: 1px;
+    width: 800px;
+    color:;
+    margin: -3px auto;
+}
+/*cont-se-a*/
+.cont-se-a 
+{
+    margin-top:100px ;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.cont-se-a div
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cont-se-a img
+{
+    height: 180px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.cont-se-a p
+{
+    color: #9c822b ;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+/*cont-se-a*/
