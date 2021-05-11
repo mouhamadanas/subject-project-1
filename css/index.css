@@ -1,3 +1,7 @@
+html 
+{
+        scroll-behavior: smooth;
+}
 ::selection
 {
     background-color: black;
@@ -39,7 +43,7 @@ header .container1 .right-cont nav ul
     margin-top: 10px;
 
 }
-header .container1 .right-cont nav ul li
+header .container1 .right-cont nav ul  li a
 {
     color:#D4AF37 ;
     font-weight: 500;
@@ -212,10 +216,11 @@ header .background p
         margin: auto;
         margin-top: 50px;
     }
-    header .container1 .right-cont nav ul li
+    header .container1 .right-cont nav ul li a
     {
         font-size: 26px;
         margin-bottom: 30px;
+        display: block;
     }
 }
 /*header*/
