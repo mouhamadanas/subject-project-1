@@ -137,11 +137,12 @@ header .background p
     display: flex;
     flex-direction: column;
     display: none;
+    margin-left: 71px;
     
 }
 .icon-hamburger span
 {
-    width: 50px;
+    width: 40px;
     height: 2px;
     background-color: #D4AF37; 
     margin-top: 10px;
@@ -152,13 +153,14 @@ header .background p
     display: flex;
     flex-direction: column;
     display: none;
+    margin-left: 71px;
 }
 .icon-close span
 {
-    width: 50px;
+    width: 40px;
     height: 5px;
     background-color: #D4AF37;
-    margin: -2px; 
+    margin: -2.5px; 
 }
 .icon-close span:first-of-type
 {
@@ -247,6 +249,7 @@ header .background p
 {
     width: 50%;
     margin-bottom: 100px;
+    box-shadow: 0px 15px 40px #888888;
 }
 @media only screen and (max-width:500px)
 {
@@ -255,6 +258,7 @@ header .background p
         font-size: 161%;
         line-height: 41px;
         letter-spacing: 4px;
+        font-weight: 400;
     }
     .cont-fi-a img
     {
@@ -264,6 +268,11 @@ header .background p
     }
 }
 /*cont-fi-a*/
+#a
+{
+    border:solid 2px #D4AF37;
+    height: 6px;
+}
 hr
 {
     height: 1px;
@@ -289,6 +298,7 @@ hr
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    box-shadow: 5px 10px 16px #888888;
 }
 
 .cont-se-a img
@@ -307,17 +317,24 @@ hr
 .cont-thi-a
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 200px;
 }
 .cont-thi-a img
 {
     width: 700px;
+    box-shadow: 5px 10px 8px #888888;
 }
 .cont-thi-a div
 {
     padding-left: 50px;
     padding-top: 30px;
+    box-shadow: 0px 20px 30px #d4af37;
+    height: 305px;
+    width: 562px;
+    margin-left: -20px;
+    background-color: aliceblue;
+    margin-top: 10px;
 }
 .cont-thi-a div h3
 {
@@ -345,6 +362,9 @@ hr
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
+        width: 85%;
+        
     }
     .cont-thi-a img
     {
@@ -449,3 +469,29 @@ footer div svg:active
     }
 }
 /*footer*/
+/*up icon*/
+.up_icon
+{
+    background-color: #D4AF37;
+    position: fixed;
+    top: 92vh;
+    right: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.up_icon img
+{
+    width: 20px;
+    margin: 20%;
+}
+/* @media only screen and (max-width:500px)
+{
+    .up_icon
+    {
+        background-color: transparent;
+    }
+} */
+/*up icon*/

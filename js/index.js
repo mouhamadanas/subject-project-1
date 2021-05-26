@@ -21,4 +21,23 @@ $(function(){
         $(".icon-hamburger").css("display","flex");
         $("header .container1 .right-cont nav ").css("display","none")
     });
+    if($(window).scrollTop()==0)
+        {
+            $(".up_icon").hide();
+            
+        }
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()<=70)
+        {
+            $(".up_icon").hide();
+            
+        }
+        else if($(window).scrollTop()>=70&&$(window).width()>=500)
+        {
+            $(".up_icon").show();
+        }
+        $(".up_icon").click(function(){
+            $(window).scrollTop(0);
+        });
+    });
 });
